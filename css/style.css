@@ -1,0 +1,63 @@
+body{
+}
+
+nav li{
+	text-decoration: underline;
+	display:inline;
+	background-color: white;
+	color: #EA3457;
+}
+
+.current{
+	text-transform: uppercase;
+	color:#602F75;
+}
+
+
+.skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+    
+    a.skip:active, 
+    a.skip:focus, 
+    a.skip:hover {
+        left: 0; 
+        top: 0;
+        width: auto; 
+        height: auto; 
+        overflow: visible; 
+    }
+
+/* code for lines referring to .skip from https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/ */
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+ul li:before {
+	content: "•";
+	position: absolute;
+	left: 0;
+}
+
+ol {
+	position: relative;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 1.2em;
+}
+ol li:before {
+	content: "◆";
+	position: absolute;
+	left: 0;
+}
+
+/* order and unordered list CSS formatting taken from https://www.w3schools.com/css/css_list.asp */ 
